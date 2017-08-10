@@ -1,0 +1,1 @@
+ROBOCOPY "\\bph-fs01\public\Dynamics GP\GP2013MFG" "C:\GP2013" *.* /E

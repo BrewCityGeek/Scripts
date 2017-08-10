@@ -1,0 +1,6 @@
+bp-vm-cdb101
+bp-vm-cdb201
+bp-vm-cdb301
+bp-vm-cdb401
+bp-vm-cdb501
+bp-vm-cdb601
