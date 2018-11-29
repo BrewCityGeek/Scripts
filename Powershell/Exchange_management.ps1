@@ -6,10 +6,6 @@ Add-PSSnapin *Exchange* -ErrorAction SilentlyContinue > $null
 $Command = 0
 
 Set-AdServerSettings -ViewEntireForest $True
-$LocalCredentials = Get-Credential corp\agossen2
-$RemoteCredentials = Get-Credential bpluscorp\agossen
-$Username = Read-Host "Enter Usename to migrate"
-.\Prepare-MoveRequest.ps1 -Identity $Username@batteriesplus.com -RemoteForestDomainController bph-mdc02.batteriesplus.com -RemoteForestCredential $RemoteCredentials -LocalForestDomainController hrtp-mdc002.corp.battplus.co -LocalForestCredential $LocalCredentials –LinkedMailUser
 
 do {
     $Command = Read-Host "Enter desired command (Type 'exit' to quit)"
