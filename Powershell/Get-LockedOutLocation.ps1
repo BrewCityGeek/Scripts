@@ -1,6 +1,3 @@
-﻿#Requires -Version 2.0
-Function Get-LockedOutLocation
-{
 <#
 .SYNOPSIS
 	This function will locate the computer that processed a failed user logon attempt which caused the user account to become locked out.
@@ -23,11 +20,12 @@ Function Get-LockedOutLocation
 #>
     [CmdletBinding()]
 
-    Param(
+     Param(
       [Parameter(Mandatory=$True)]
       [String]$Identity      
     )
-
+	
+	
     Begin
     { 
         $DCCounter = 0 
@@ -111,5 +109,3 @@ Function Get-LockedOutLocation
        }#end foreach lockedout event
        
     }#end process
-   
-}#end function
